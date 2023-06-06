@@ -1,13 +1,13 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  margin-top: 10%
+  margin-top: 10%;
   background-color: #2A2A2A;
 
   display: flex;
 `
 
-export const EntranceFormTitle = styled.Text`
+export const CreateAccountFormTitle = styled.Text`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -18,7 +18,7 @@ export const EntranceFormTitle = styled.Text`
   color: #A8A8A8;
 `
 
-export const EntranceFormInput = styled.TextInput`
+export const CreateAccountFormInput = styled.TextInput`
   box-sizing: border-box;
 
   display: flex;
@@ -42,7 +42,7 @@ export const EntranceFormInput = styled.TextInput`
   margin-bottom: 6%;
 `
 
-export const EntranceCheckContainer = styled.View`
+export const CreateAccountCheckContainer = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

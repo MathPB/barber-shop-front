@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import EntranceButtonComponent from "../entrance-button";
-import EntranceCheckBox from "../entrance-checkbox";
+import EntranceCheckBox from "./entrance-checkbox";
+import EntranceButtonComponent from "./entrance-button";
+import EntranceGoogleButtonComponent from "./entrance-google-button";
 
 import { Container, EntranceFormInput, EntranceFormTitle, EntranceCheckContainer, ForgetPassword } from "./styles"
 
@@ -30,6 +31,7 @@ export default function EntranceForm() {
                 <ForgetPassword>Esqueci a senha</ForgetPassword>
             </EntranceCheckContainer>
             <EntranceButtonComponent />
+            <EntranceGoogleButtonComponent />
         </Container>
     </>
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import { 
-    CreateAccountButton,
-    CreateAccountButtonText,
+    EntranceButton,
+    EntranceButtonText,
 } from "./styles"
 
 export default function EntranceButtonComponent() {
@@ -17,12 +17,12 @@ export default function EntranceButtonComponent() {
     };
 
     return <>
-        <CreateAccountButton 
+        <EntranceButton 
             onPressIn={handlePressIn}
             onPressOut={handlePressOut}
             isPressed={isPressed}
         >
-            <CreateAccountButtonText>Entrar</CreateAccountButtonText>
-        </CreateAccountButton>
+            <EntranceButtonText>Entrar</EntranceButtonText>
+        </EntranceButton>
     </>
 }

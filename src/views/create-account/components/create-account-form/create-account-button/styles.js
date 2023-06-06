@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const CreateAccountButton = styled.TouchableOpacity`
+export const EntranceButton = styled.TouchableOpacity`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,17 +8,16 @@ export const CreateAccountButton = styled.TouchableOpacity`
     padding: 16px;
     gap: 10px;
 
-    width: 328px;
+    width: 92%;
     height: 51px;
 
+    border: 1px solid #007FFF;
     border-radius: 8px;
-    
-    background-color: ${({ isPressed }) => (isPressed ? '#3F9EFE' : '#007FFF')};
 
     margin-bottom: 2%;
 `;
 
-export const CreateAccountButtonText = styled.Text`
+export const EntranceButtonText = styled.Text`
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -26,5 +25,5 @@ export const CreateAccountButtonText = styled.Text`
     text-align: center;
     letter-spacing: -0.02px;
 
-    color: #FFFFFF;
+    color: #007FFF;
 `

@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 
-import { useNavigation } from '@react-navigation/native';
-
 import { 
-    CreateAccountButton,
-    CreateAccountButtonText,
+    EntranceButton,
+    EntranceButtonText,
 } from "./styles"
 
-export default function CreateAccountButtonComponent() {
+export default function EntranceButtonComponent() {
     const [isPressed, setIsPressed] = useState(false);
-    const navigation = useNavigation();
 
     const handlePressIn = () => {
       setIsPressed(true);
@@ -20,13 +17,12 @@ export default function CreateAccountButtonComponent() {
     };
 
     return <>
-        <CreateAccountButton 
+        <EntranceButton 
             onPressIn={handlePressIn}
             onPressOut={handlePressOut}
             isPressed={isPressed}
-            onPress={() => navigation.navigate('EntranceLogin')}
         >
-            <CreateAccountButtonText>Criar Conta</CreateAccountButtonText>
-        </CreateAccountButton>
+            <EntranceButtonText>Entrar</EntranceButtonText>
+        </EntranceButton>
     </>
 }
