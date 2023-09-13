@@ -5,7 +5,7 @@ import {
     EntranceButtonText,
 } from "./styles"
 
-export default function EntranceButtonComponent() {
+export default function EntranceButtonComponent({ completed }) {
     const [isPressed, setIsPressed] = useState(false);
 
     const handlePressIn = () => {
@@ -21,8 +21,9 @@ export default function EntranceButtonComponent() {
             onPressIn={handlePressIn}
             onPressOut={handlePressOut}
             isPressed={isPressed}
+            completed={completed}
         >
-            <EntranceButtonText>Entrar</EntranceButtonText>
+            <EntranceButtonText completed={completed}>Entrar</EntranceButtonText>
         </EntranceButton>
     </>
 }

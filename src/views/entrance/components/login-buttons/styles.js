@@ -1,10 +1,18 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const ContainerEntrance = styled.View`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+`
+
+export const ContainerGuest = styled.View`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 `

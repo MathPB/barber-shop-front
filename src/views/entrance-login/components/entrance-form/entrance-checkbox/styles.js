@@ -10,7 +10,7 @@ export const CheckboxMark = styled.View`
   width: 20px;
   height: 20px;
   border-width: 2px;
-  border: 1px solid #757575;
+  border: 1px solid #909090;
   /* border-color: ${(props) => (props.checked ? 'green' : 'black')}; */
   border-radius: 4px;
   /* background-color: ${(props) => (props.checked ? 'green' : 'transparent')}; */
@@ -21,7 +21,7 @@ export const CheckboxText = styled.Text`
   width: 91px;
   height: 19px;
 
-  color: #757575;
+  color: #909090;
 
   font-style: normal;
   font-weight: 500;

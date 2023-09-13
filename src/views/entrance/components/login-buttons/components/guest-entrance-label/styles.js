@@ -1,28 +1,27 @@
 import styled from "styled-components/native";
 
-export const EntranceButton = styled.TouchableOpacity`
+export const GuestEntranceButton = styled.TouchableOpacity`
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 16px;
     gap: 8px;
 
-    width: 158px;
+    width: 328px;
     height: 51px;
 
     ${({ isPressed }) => (isPressed && 
         'background-color: #FFF'    
     )};
 
-    border: 1px solid #909090;
     border-radius: 8px;
-
-    margin-left: 5%;
+    padding: 16px;
+    gap: 8px;
 `
 
-export const EntranceButtonText = styled.Text`
-    font-weight: 500;
+export const GuestEntranceButtonText = styled.Text`
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
     text-align: center;

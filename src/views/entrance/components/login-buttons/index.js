@@ -5,15 +5,19 @@ import CreateAccountButtonComponent from "./components/create-account-button";
 import EntranceButtonComponent from "./components/entrance-button";
 
 import { 
-    Container
+    ContainerEntrance,
+    ContainerGuest
 } from "./styles"
+import GuestEntranceButtonComponent from "./components/guest-entrance-label";
 
 export default function LoginButton() {
     return <>
-        <Container>
+        <ContainerEntrance>
             <CreateAccountButtonComponent />
-            <Segregation />
             <EntranceButtonComponent />
-        </Container>
+        </ContainerEntrance>
+        <ContainerGuest>
+            <GuestEntranceButtonComponent />
+        </ContainerGuest>
     </>
 }

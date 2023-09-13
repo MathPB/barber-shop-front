@@ -1,21 +1,21 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  margin-top: 10%
-  background-color: #2A2A2A;
-
+  background-color: #1C1C1E;
+  
+  margin-top: 10%;
   display: flex;
 `
 
 export const EntranceFormTitle = styled.Text`
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
 
   padding-left: 4%;
+  padding-bottom: 2%;
 
-  color: #A8A8A8;
+  color: #C8C8C8;
 `
 
 export const EntranceFormInput = styled.TextInput`
@@ -25,13 +25,11 @@ export const EntranceFormInput = styled.TextInput`
   padding: 12px;
   gap: 4px;
 
-  border: 1px solid #757575;
   border-radius: 8px;
 
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 24.2px;
 
   letter-spacing: -0.02px;
 
@@ -40,6 +38,10 @@ export const EntranceFormInput = styled.TextInput`
   width: 92%;
   align-self: center;
   margin-bottom: 6%;
+
+  background-color: #2F2F2F;
+
+  border: ${props => (props.completed ? "1px solid #A8A8A8" : "transparent")};
 `
 
 export const EntranceCheckContainer = styled.View`
@@ -53,7 +55,6 @@ export const EntranceCheckContainer = styled.View`
 `;
 
 export const ForgetPassword = styled.Text`
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -61,7 +62,7 @@ export const ForgetPassword = styled.Text`
   align-items: center;
   text-align: right;
 
-  color: #757575; 
+  color: #909090; 
 
   padding-right: 4%;
 `;

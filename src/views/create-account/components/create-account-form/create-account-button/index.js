@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 import { 
-    EntranceButton,
-    EntranceButtonText,
+    CreateButton,
+    CreateButtonText,
 } from "./styles"
 
-export default function EntranceButtonComponent() {
+export default function CreateAccountButtonComponent({ completed }) {
+
     const [isPressed, setIsPressed] = useState(false);
 
     const handlePressIn = () => {
@@ -17,12 +18,13 @@ export default function EntranceButtonComponent() {
     };
 
     return <>
-        <EntranceButton 
+        <CreateButton 
             onPressIn={handlePressIn}
             onPressOut={handlePressOut}
             isPressed={isPressed}
+            completed={completed}
         >
-            <EntranceButtonText>Entrar</EntranceButtonText>
-        </EntranceButton>
+            <CreateButtonText completed={completed}>Avançar</CreateButtonText>
+        </CreateButton>
     </>
 }

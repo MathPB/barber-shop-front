@@ -8,14 +8,12 @@ export const CreateAccountButton = styled.TouchableOpacity`
     padding: 16px;
     gap: 10px;
 
-    width: 361px;
-    height: 56px;
+    width: 158px;
+    height: 51px;
     
     background-color: ${({ isPressed }) => (isPressed ? '#3F9EFE' : '#007FFF')};
     
-    border-radius: 100px;
-
-    margin-bottom: 2%;
+    border-radius: 8px;
 `;
 
 export const CreateAccountButtonText = styled.Text`

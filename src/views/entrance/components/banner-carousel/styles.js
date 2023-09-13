@@ -10,27 +10,28 @@ export const Container = styled.View`
 `
 
 export const Title = styled.Text`
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 
     text-align: center;
     
-    color: #D0D0D0;
+    color: #F2F2F2;
 
     margin-top: 5%;
     margin-bottom: 2%;
 `
 
 export const SubTitle = styled.Text`
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
 
     text-align: center;
-    letter-spacing: 0.01px;
 
-    color: #757575;
+    letter-spacing: 1%;
+
+    color: #A8A8A8;
+
+    padding: 0 2%;
 `

@@ -24,7 +24,7 @@ export default function CreateAccountButtonComponent() {
             onPressIn={handlePressIn}
             onPressOut={handlePressOut}
             isPressed={isPressed}
-            onPress={() => navigation.navigate('EntranceLogin')}
+            onPress={() => navigation.navigate('CreateAccount')}
         >
             <CreateAccountButtonText>Criar Conta</CreateAccountButtonText>
         </CreateAccountButton>

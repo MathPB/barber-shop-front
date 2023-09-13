@@ -6,13 +6,14 @@ export const Container = styled.View`
     justify-content: center;
     align-items: center;
 
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 `
 
 export const BarberTitle = styled.Text`
     font-size: 24px;
-    color: #757575;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 28.8px;
 
-    margin-left: 10px;
+    color: #909090;
 `

@@ -12,7 +12,9 @@ export const Container = styled.View`
 
 export const BarberTitle = styled.Text`
     font-size: 24px;
-    color: #757575;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 28.8px;
 
-    margin-left: 10px;
+    color: #909090;
 `

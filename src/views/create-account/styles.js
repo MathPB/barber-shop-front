@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    background-color: #2A2A2A;
+    background-color: #1C1C1E;
 
     display: flex;
     justify-content: center;
@@ -10,21 +10,23 @@ export const Container = styled.View`
 `
 
 export const CreateAccountSubTitle = styled.Text`
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 38.4px;
     text-align: center;
 
-    color: #D0D0D0;
+    color: #F2F2F2;
+
+    padding-bottom: 3%;
 `
 export const InformationText = styled.Text`
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.02px;
 
-    color: #757575;
+    padding: 0 5%;
+
+    color: #A8A8A8;
 `

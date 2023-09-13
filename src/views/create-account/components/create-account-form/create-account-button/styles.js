@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const EntranceButton = styled.TouchableOpacity`
+export const CreateButton = styled.TouchableOpacity`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,9 +15,12 @@ export const EntranceButton = styled.TouchableOpacity`
     border-radius: 8px;
 
     margin-bottom: 2%;
+    margin-top: 13%;
+
+    background-color: ${props => (props.completed ? "#007FFF" : "transparent")};
 `;
 
-export const EntranceButtonText = styled.Text`
+export const CreateButtonText = styled.Text`
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -25,5 +28,5 @@ export const EntranceButtonText = styled.Text`
     text-align: center;
     letter-spacing: -0.02px;
 
-    color: #007FFF;
+    color: ${props => (props.completed ? "#FFF" : "#007FFF")}
 `
