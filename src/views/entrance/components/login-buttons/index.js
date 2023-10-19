@@ -1,6 +1,5 @@
 import React from "react";
 
-import Segregation from "./components/segregation";
 import CreateAccountButtonComponent from "./components/create-account-button";
 import EntranceButtonComponent from "./components/entrance-button";
 

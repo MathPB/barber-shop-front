@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
+import { useNavigation } from '@react-navigation/native';
+
 import { 
     CreateButton,
     CreateButtonText,
 } from "./styles"
 
-export default function CreateAccountButtonComponent({ completed }) {
+export default function CreateAccountButtonComponent({ completed, clicked }) {
+    const navigation = useNavigation();
 
     const [isPressed, setIsPressed] = useState(false);
 
@@ -23,8 +26,10 @@ export default function CreateAccountButtonComponent({ completed }) {
             onPressOut={handlePressOut}
             isPressed={isPressed}
             completed={completed}
+            clicked={clicked}
+            onPress={() => navigation.navigate('AccountCreated')}
         >
-            <CreateButtonText completed={completed}>Avançar</CreateButtonText>
+            <CreateButtonText completed={completed} clicked={clicked}>Avançar</CreateButtonText>
         </CreateButton>
     </>
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Image } from "react-native"
 
-import googleLogo from "../../../../../../assets/images/google-login.png"
+import googleLogo from "../../../../../../../assets/images/google-login.png"
 
 import { 
     EntranceGoogleButton,

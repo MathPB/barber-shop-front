@@ -4,7 +4,7 @@ import { Image } from "react-native"
 
 import {Container, BarberTitle} from "./styles"
 
-import logo from "../../../../../assets/images/logo.png"
+import logo from "../../../../../../assets/images/logo.png"
 
 
 export default function EntranceTitle() {

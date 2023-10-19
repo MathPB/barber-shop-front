@@ -4,8 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Entrance from './src/views/entrance';
-import EntranceLogin from './src/views/entrance-login';
-import CreateAccount from "./src/views/create-account";
+import EntranceLogin from './src/views/entrance/entrance-login';
+import CreateAccount from "./src/views/entrance/create-account";
+import AccountCreated from "./src/views/entrance/create-account/components/account-created"
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name="Entrance" component={Entrance} />
         <Stack.Screen name="EntranceLogin" component={EntranceLogin} />
         <Stack.Screen name="CreateAccount" component={CreateAccount} />
+        <Stack.Screen name="AccountCreated" component={AccountCreated} />
       </Stack.Navigator>
     </NavigationContainer>
   );

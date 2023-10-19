@@ -11,10 +11,12 @@ export default function CreateAccountForm() {
     const [password, setPassword] = useState("");
 
     const [completed, setCompleted] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const completedForm = () => {
         if (nome !== '' && email !== '' && password !== '') {
           setCompleted(true);
+          setIsClicked(true);
         }
     };
 
@@ -46,7 +48,7 @@ export default function CreateAccountForm() {
                 secureTextEntry={true}
                 completed={completed}
             />
-            <CreateAccountButtonComponent completed={completed} />
+            <CreateAccountButtonComponent completed={completed} clicked={isClicked} />
             <CreateAccountGoogleButtonComponent />
         </Container>
     </>
