@@ -4,9 +4,15 @@ import EntranceCheckBox from "./entrance-checkbox";
 import EntranceButtonComponent from "./entrance-button";
 import EntranceGoogleButtonComponent from "./entrance-google-button";
 
+import { useNavigation } from '@react-navigation/native';
+
+import { TouchableOpacity } from 'react-native';
+
 import { Container, EntranceFormInput, EntranceFormTitle, EntranceCheckContainer, ForgetPassword } from "./styles"
 
 export default function EntranceForm() {
+    const navigation = useNavigation();
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -40,7 +46,9 @@ export default function EntranceForm() {
         />
         <EntranceCheckContainer>
             <EntranceCheckBox />
-            <ForgetPassword>Esqueci a senha</ForgetPassword>
+            <TouchableOpacity  onPress={() => navigation.navigate('RecoverPassword')}>
+                <ForgetPassword>Esqueci a senha</ForgetPassword>
+            </TouchableOpacity>
         </EntranceCheckContainer>
         <EntranceButtonComponent completed={completed} />
         <EntranceGoogleButtonComponent />
